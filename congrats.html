@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Congratulations!</title>
+    <style>
+        body {
+            background-color: #000000;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            display: flex   ;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        h1 {
+            color: #969696;
+            font-size: 48px;
+            margin-top: 2rem;
+        }
+        button{
+            font-size: 24px;
+            height: 80px;
+            color: white;
+            width: 25%;
+            cursor: pointer;
+            border-radius: 20px;
+            border: none;
+            background: rgb(2,0,36);
+            background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+        }
+        button:hover{
+            color: rgb(90, 210, 25);
+            font-size: xx-large;
+            transform: translate(2px) scale(1.1);
+            transition: 1s;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Congratulations You've won the game!</h1>
+ <img src="https://i.pinimg.com/originals/a8/9a/39/a89a394dd01637cfa8cc852e8792835d.gif" alt="">
+    <button onclick="handleRedirect()"> Play Again</button>
+</body>
+<script>
+    function handleRedirect() {
+        window.location.href = "index.html";
+    }
+</script>
+</html>
